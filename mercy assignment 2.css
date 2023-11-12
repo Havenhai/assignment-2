@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "jost", sans-serif;
+    transform: 3s linear;
+   
+}
+html{
+    font-size: medium;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+.heading{
+    text-align: center;
+    font-size: x-large;
+    color:#ffd105;
+    padding: 1rem;
+    margin: 2rem 0;
+   
+}
+section{
+    padding: 4rem 9%;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30%;
+    
+}
+.logo img{
+   max-width:70px;
+    height: auto;
+ margin: 0px;
+}
+.homepage{
+   
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+.nav-menu a:hover{
+    color: rgb(118, 4, 224);
+}
+.nav-icons i{
+    margin-right: 20px;
+    align-items: center;
+    display: grid;
+    }
+header.nav-icons{
+    font-size: 3rem;
+    color:#e20f0f;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0, 0, 0,.3);
+    display: none;
+}
+.span{
+    color: #cf1212;
+}
+.phone1{
+    max-width: 300px;
+ 
+}
+.phone2{
+    max-width: 300px;
+     
+}
+.phone3{
+    max-width: 700px;
+   
+}
+.phone4{
+   
+}
+.phone5{
+   max-width: 300px; 
+}
+.phones{
+float: left;
+}
