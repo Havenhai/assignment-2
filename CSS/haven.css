@@ -110,7 +110,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../haven.jpg);
+    background-image: url(../haven.jpg);
     background-size: cover;
     background-position: center;
 }
