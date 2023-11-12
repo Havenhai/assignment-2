@@ -110,7 +110,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../haven.jpg);
+    background: url(https://www.digitaltrends.com/wp-content/uploads/2022/10/iPhone-14-Pro-vs-Galaxy-S22-Ultra-camera.jpg?p=1);
     background-size: cover;
     background-position: center;
 }
