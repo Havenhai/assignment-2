@@ -68,7 +68,7 @@ header .logo{
     color: #333;
     font-weight: bolder;
 }
-header .logo .work{
+header .logo img{
     border-radius: 1px;
     width: 1px;
     height: 1px;
@@ -196,8 +196,17 @@ header .fa-bars{
 .about .row .content{
     flex: 1 1 40rem;
 }
-
-
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
 
 
 
