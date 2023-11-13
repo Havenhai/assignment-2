@@ -1,0 +1,56 @@
+
+body{
+    background-color: grey;
+    font-family: poppins;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+ ul li {
+   list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+color: blue;
+}
+nav ul img{
+   border-radius: 50%;
+}
+
+#paragraph{
+    text-align: center;
+    margin-top: 200px;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: rgb(92, 69, 114);
+    color: white;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+
+}
+footer{ background-color: black;
+color: white;
+margin-top: 50px;
+
+}
+.footer-section{
+    text-align: center;
+  
+}
+.footer-section h3{
+    color: green;
+
+}
