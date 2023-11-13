@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --pink:#e84393;
 }
 
@@ -21,9 +21,9 @@ html{
 
 section{
     padding: 2rem 9%;
-}
+} */
 
-.heading{
+/* .heading{
     text-align: center;
     font-size: 4rem;
     color:#333;
@@ -157,7 +157,7 @@ header .fa-bars{
     color:#999;
     padding: 1rem 0;
     line-height: 1.5;
-}
+} */
 
 .about .row{
     display: flex;
