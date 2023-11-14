@@ -1,700 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- <link rel="stylesheet" href="hav.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../CSS/home1.css"> -->
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-            font-family: 'Jost', sans-serif;
-            list-style: none;
-            text-decoration: none;
-        }
-        .center-text h2 {
-            color:black;
-            font-size: 30px;
-            text-transform: capitalize;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .center-text span{
-            color: springgreen;
-        }
-        .products{
-            
-            display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             gap: 20px;
-            justify-content: space-between;
-        }
-        .row{
-            position: relative;
-            transition: all .40s;
-        }
-        .row img{
-            width: 100%;
-            height: auto;
-            transition: all .40s ;
-        }
-        .row img:hover{
-            transform: scale(0.9)
-        }
-        .product-text h5{
-            position: absolute;
-            top: 13px;
-            left: 13px;
-            color: #fff;
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-            background-color: #27b737;
-            padding: 3px 10px;
-            border-radius: 2px;
-        }
-        .heart-icon{
-            position: absolute;
-            right: 0;
-            font-size: 20px;
-        }
-        .heart-icon:hover{
-            color:red;
-        }
-        .ratting i {
-            color: rgb(240, 214, 66);
-        }
-        .price h4 {
-            color: black;
-            font-size: 16px;
-            text-transform: capitalize;
-            font-weight: 400;
-        }
-        .price p {
-            color:black;
-            font-size: 14px;
-            font-weight: 600;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "Jost", sans-serif;
+        list-style: none;
+        text-decoration: none;
+      }
+
+      nav {
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav-links {
+        flex: 1;
+        text-align: right;
+      }
+
+      /* nav links styling */
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+      .nav-links ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      /* hover effect for nav links*/
+      .nav-links ul li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+
+      .center-text h2 {
+        color: black;
+        font-size: 30px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .center-text span {
+        color: springgreen;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .row {
+        position: relative;
+        transition: all 0.4s;
+      }
+      .row img {
+        width: 100%;
+        height: auto;
+        transition: all 0.4s;
+      }
+      .row img:hover {
+        transform: scale(0.9);
+      }
+      .product-text h5 {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: #27b737;
+        padding: 3px 10px;
+        border-radius: 2px;
+      }
+      .heart-icon {
+        position: absolute;
+        right: 0;
+        font-size: 20px;
+      }
+      .heart-icon:hover {
+        color: red;
+      }
+      .ratting i {
+        color: rgb(240, 214, 66);
+      }
+      .price h4 {
+        color: black;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+      .price p {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+      }
         .img try{
             width: 100px;
             height: 50px;
         }
-
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="aboutus.html" target="_blank">ABOUT</a></li>
+          <li><a href="product.html" target="blank">PRODUCT</a></li>
+          <li><a href="!#">REVIEWS</a></li>
+          <li><a href="!#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <section class="pro" id="pros">
-        <div class="center-text">
-            <h2> Our <span>products</span> </h2>
-        </div>
-        <div class="products">
-            <div class="row">
-                <img class="try" src="../images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg" alt="">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>headphone</h4>
-                <p>$300</p>
-            </div>
-            </div>
+      <div class="center-text">
+        <h2>Our <span>products</span></h2>
+      </div>
+      <div class="products">
         <div class="row">
-        <img src="../images/altumcode-rsQZm3wNu0I-unsplash.jpg" alt="laptop">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>laptop</h4>
-                <p>$2000</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/anh-nhat-iMGFQP2pZFs-unsplash.jpg" alt="">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/anh-nhat-PdALQmfEqvE-unsplash.jpg" alt="">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/anh-nhat-uCqMa_s-JDg-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/anthony-choren-e7dG26YCrZU-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/brooke-cagle-Ftx92UKO3Xg-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/clay-banks-PXaQXThG1FY-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/crystal-collis-w4xdt5o9Fs4-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/d-c-tr-nh-I16v5wzxQDo-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/daniel-romero-6V5vTuoeCZg-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/daniel-romero-gsYbutxoebc-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/daniel-romero-k02ylg1ABkg-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/dell-e59Y6vqbL7Y-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/gadget-flat-icons-mobile-devices-vector-20529727.webp" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/haven.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/iphone15-pro-64.webp" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/jay-zhang-1hODsNcJ7es-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/joachim-pressl-te2Bx91N16w-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/jonny-caspari-28p5zbT8vew-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/kevin-bhagat-Co-usQ-kpO0-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/luke-peterson-lUMj2Zv5HUE-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/michael-soledad-dJt4lxWy5nk-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/mohammadreza-alidoost-LKLiE3u4Kr4-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/nik-5_ImgwicW_0-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/nikolay-_qOf3MkCrhk-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/zana-latif-5uJMG9fUAO0-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/workperch-Nfo71qRBtBg-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/v-a-tao-tjFeGpPRFig-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
-            <div class="row">
-                <img src="../images/v-a-tao-tAd2aRWdqIQ-unsplash.jpg" alt="photo">
-                <div class="product-text">
-                    <h5>sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star-half'></i>
-                </div>
-                <div class="price">
-                <h4>iphone</h4>
-                <p>$1320</p>
-            </div>
-            </div>
+          <img class="try" src="../images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg" alt="" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>headphone</h4>
+            <p>$300</p>
+          </div>
         </div>
+        <div class="row">
+          <img src="../images/altumcode-rsQZm3wNu0I-unsplash.jpg" alt="laptop" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>laptop</h4>
+            <p>$2000</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/anh-nhat-iMGFQP2pZFs-unsplash.jpg" alt="" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/anh-nhat-PdALQmfEqvE-unsplash.jpg" alt="" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/anh-nhat-uCqMa_s-JDg-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/anthony-choren-e7dG26YCrZU-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/brooke-cagle-Ftx92UKO3Xg-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/clay-banks-PXaQXThG1FY-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/crystal-collis-w4xdt5o9Fs4-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/d-c-tr-nh-I16v5wzxQDo-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/daniel-romero-6V5vTuoeCZg-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/daniel-romero-gsYbutxoebc-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/daniel-romero-k02ylg1ABkg-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/dell-e59Y6vqbL7Y-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img
+            src="../images/gadget-flat-icons-mobile-devices-vector-20529727.webp"
+            alt="photo"
+          />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/haven.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/iphone15-pro-64.webp" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/jay-zhang-1hODsNcJ7es-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/joachim-pressl-te2Bx91N16w-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/jonny-caspari-28p5zbT8vew-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/kevin-bhagat-Co-usQ-kpO0-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/luke-peterson-lUMj2Zv5HUE-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/michael-soledad-dJt4lxWy5nk-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/mohammadreza-alidoost-LKLiE3u4Kr4-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/nik-5_ImgwicW_0-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/nikolay-_qOf3MkCrhk-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/zana-latif-5uJMG9fUAO0-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/workperch-Nfo71qRBtBg-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/v-a-tao-tjFeGpPRFig-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="../images/v-a-tao-tAd2aRWdqIQ-unsplash.jpg" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>iphone</h4>
+            <p>$1320</p>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
