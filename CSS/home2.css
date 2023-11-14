@@ -1,11 +1,11 @@
-#paragraph {
+/* #paragraph {
   text-align: center;
   margin-top: 200px;
   font-weight: 600;
   font-size: 30px;
   background-color: rgb(92, 69, 114);
   color: white;
-}
+} */
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -24,7 +24,7 @@ footer {
 .footer-section h3 {
   color: green;
 }
-.footer-section a{
+/* .footer-section a{
     text-decoration: none;
     color: white;
-}
+} */
