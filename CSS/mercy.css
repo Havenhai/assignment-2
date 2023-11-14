@@ -1,7 +1,11 @@
 .imagess {
-    width: 200px;
-    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-between;
 }
+
+
 /* *{
     margin: 0px;
     padding: 0px;
