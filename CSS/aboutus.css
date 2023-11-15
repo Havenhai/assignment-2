@@ -126,13 +126,14 @@ footer {
 }
 .footer-section {
   text-align: center;
+  line-height: 25px;
 }
 .footer-section h3 {
   color: green;
 }
-.footer-section p{
+/* .footer-section p{
   line-height: 30px;
-}
+} */
 
 /* media queries*/
 @media (max-width: 991px) {
