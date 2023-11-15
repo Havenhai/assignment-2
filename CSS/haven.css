@@ -132,9 +132,7 @@ footer {
   .home {
     background-position: left;
   }
-  .aboutus {
-    background-position: left;
-  }
+ 
 }
 
 @media (max-width: 768px) {
