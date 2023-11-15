@@ -92,8 +92,8 @@ nav {
 }
 
 .hero-button:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
+  border: 1px solid #e1908a;
+  background: #e1908a;
   transition: 1s;
 }
 @media (max-width: 800px) {
@@ -105,7 +105,7 @@ nav {
   }
   .nav-links {
     position: absolute;
-    background: #f44336;
+    background: #e1908a;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -116,7 +116,7 @@ nav {
 }
 
 .background {
-  background-color: #f44336;
+  background-color: #eee;
   display: grid;
   place-items: center;
   height: 92vh;
