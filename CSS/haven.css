@@ -99,7 +99,7 @@ h1 {
 .about .row .content {
   flex: 1 1 40rem;
 }
-.menu-icon{
+.aboutt .menu-icon{
   width: 25px;
   cursor: pointer;
 }
@@ -140,6 +140,9 @@ footer {
   header {
     padding: 2rem;
   }
+  .aboutt{
+    padding: 2rem;
+  }
 
   section {
     padding: 2rem;
@@ -154,9 +157,10 @@ footer {
 @media (max-width: 768px) {
   header .fa-bars {
     display: block;
-    align-items: left;
   }
-
+.aboutt .fa-bars{
+  display: block;
+}
   header .navbar {
     position: absolute;
     top: 0;
@@ -166,6 +170,7 @@ footer {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+  
   header .navbar a{
     margin: 1.5rem;
     padding: 1.5rem;
@@ -173,12 +178,12 @@ footer {
     border: .1rem solid rgba(0, 0, 0, 0.1);
     display: block;
   }
-
-
+ 
   header #toggler:checked ~ .navbar {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  
   }
-
+ 
   /* header .navbar a {
     margin: 1.5rem;
     padding: 1.5rem;
