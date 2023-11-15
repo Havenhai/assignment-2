@@ -11,7 +11,8 @@
     <!-- <link rel="stylesheet" href="../CSS/home1.css"> -->
     <style>
       * {
-        margin: 0;
+        margin-left: 10px;
+        margin-right: 13px;
         padding: 0;
         box-sizing: border-box;
         scroll-behavior: smooth;
@@ -19,7 +20,9 @@
         list-style: none;
         text-decoration: none;
       }
-
+      .favicon {
+        width: 100px;
+      }
       nav {
         display: flex;
         padding: 2% 6%;
@@ -79,8 +82,8 @@
         transition: all 0.4s;
       }
       .row img {
-        width: 100%;
-        height: 500px;
+        width: 400px;
+        /* height: 500px; */
         transition: all 0.4s;
       }
       .row img:hover {
@@ -124,10 +127,47 @@
             width: 100px;
             height: 50px;
         }
+  @media screen and (max-width: 768px) {
+  .products {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+  }
+  div > div > img{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.hero-button {
+  display: inline-block;
+  
+  text-decoration: none;
+  color: white;
+  border: 1px solid #e7685f;;
+  padding: 8px 16px;
+  font-size: 13px;
+  background: #e7685f;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-left: 32px;
+}
+.hero-button:hover {
+  border: 1px solid blanchedalmond;
+  background: blanchedalmond;
+  color: #e7685f;
+  transition: 1s;
+}
     </style>
   </head>
   <body>
     <nav>
+      <a href="home.html"
+            ><img
+              class="favicon"
+              src="../images/130267-d-letter-download-hq.png"
+              alt=""
+          /></a>
       <div class="nav-links">
         <ul>
           <li><a href="home.html">HOME</a></li>
@@ -145,7 +185,7 @@
       </div>
       <div class="products">
         <div class="row">
-          <img class="try" src="../images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg" alt="" />
+          <img class="try" src="https://images.unsplash.com/photo-1609561954579-f5d38cece8c4?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -160,12 +200,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>headphone</h4>
-            <p>$300</p>
+            <h4>Samsung Galaxy A12</h4>
+            <p>$100</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/altumcode-rsQZm3wNu0I-unsplash.jpg" alt="laptop" />
+          <img src="https://images.unsplash.com/photo-1568378711447-f5eef04d85b5?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Samsung Galaxy Fold" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -180,8 +220,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>laptop</h4>
-            <p>$2000</p>
+            <h4>Samsung Galaxy Fold</h4>
+            <p>$500</p>
           </div>
         </div>
         <div class="row">
@@ -325,7 +365,7 @@
           </div>
         </div>
         <div class="row">
-          <img src="../images/d-c-tr-nh-I16v5wzxQDo-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -340,12 +380,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>wireless airpod</h4>
+            <h4>Airpod Max</h4>
             <p>$900</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/daniel-romero-6V5vTuoeCZg-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1530520960548-0d70a1ad430d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -360,12 +400,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>wireless airpod</h4>
+            <h4>Macbook Pro</h4>
             <p>$1320</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/daniel-romero-gsYbutxoebc-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1695048065127-fbee942eed2e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -380,12 +420,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>sumsung m54</h4>
-            <p>$2599</p>
+            <h4>iPhone 15</h4>
+            <p>$1899</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/daniel-romero-k02ylg1ABkg-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1655176471504-98ce2bd8af06?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -400,12 +440,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>wireless airpod in black</h4>
-            <p>$1320</p>
+            <h4>Brown Analog Style Keyboard</h4>
+            <p>$60</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/dell-e59Y6vqbL7Y-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1511499271651-073325718d90?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -420,13 +460,13 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>keybord</h4>
-            <p>$650</p>
+            <h4>Sonos Bluetooth Speaker</h4>
+            <p>$200</p>
           </div>
         </div>
         <div class="row">
           <img
-            src="../images/haven3.webp"
+            src="https://images.unsplash.com/photo-1518444667766-94728310399f?q=80&w=1456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="photo"
           />
           <div class="product-text">
@@ -443,12 +483,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>iphone and sumsung</h4>
-            <p>$2000</p>
+            <h4>Amazon Bluetooth Speaker</h4>
+            <p>$100</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/haven.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -463,12 +503,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>Iphone</h4>
-            <p>$1420</p>
+            <h4>iphone combo</h4>
+            <p>$1000</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/iphone15-pro-64.webp" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -483,8 +523,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>Iphone 9</h4>
-            <p>$10,020</p>
+            <h4>Airpod pro</h4>
+            <p>$70</p>
           </div>
         </div>
         <div class="row">
@@ -503,8 +543,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>sumsung m23</h4>
-            <p>$2800</p>
+            <h4>Samsung Fold</h4>
+            <p>$900</p>
           </div>
         </div>
         <div class="row">
@@ -523,8 +563,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>Laptop</h4>
-            <p>$6000</p>
+            <h4>Asus</h4>
+            <p>$600</p>
           </div>
         </div>
         <div class="row">
@@ -543,12 +583,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>iphone</h4>
-            <p>$3000</p>
+            <h4>iphone 7</h4>
+            <p>$80</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/kevin-bhagat-Co-usQ-kpO0-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1606741965509-717b9fdd6549?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -563,8 +603,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>iphone</h4>
-            <p>$3440</p>
+            <h4>Airpods Pro</h4>
+            <p>$140</p>
           </div>
         </div>
         <div class="row">
@@ -588,7 +628,7 @@
           </div>
         </div>
         <div class="row">
-          <img src="../images/michael-soledad-dJt4lxWy5nk-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1605714048976-892f6b95320e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -603,8 +643,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>wireless headphone</h4>
-            <p>$1229</p>
+            <h4>wVirtual Reality Glasses</h4>
+            <p>$1500</p>
           </div>
         </div>
         <div class="row">
@@ -623,8 +663,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>wireless mouth</h4>
-            <p>$999</p>
+            <h4>Wireless Mouse</h4>
+            <p>$100</p>
           </div>
         </div>
         <div class="row">
@@ -643,12 +683,12 @@
               <i class="bx bx-star-half"></i>
             </div>
             <div class="price">
-              <h4>sumsung laptop</h4>
+              <h4>Samsung</h4>
               <p>$1400</p>
             </div>
           </div>
         <div class="row">
-          <img src="../images/nik-5_ImgwicW_0-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1698050683094-b7e0e57ea903?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -663,8 +703,28 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>earphone</h4>
-            <p>$3200</p>
+            <h4>Virtual Reality Goggles</h4>
+            <p>$2000</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="https://images.unsplash.com/photo-1558537348-c0f8e733989d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
+          <div class="product-text">
+            <h5>sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>JBL Bluetooth Speaker</h4>
+            <p>$200</p>
           </div>
         </div>
         <div class="row">
@@ -683,28 +743,8 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>Laptop</h4>
-            <p>$1678</p>
-          </div>
-        </div>
-        <div class="row">
-          <img src="../images/zana-latif-5uJMG9fUAO0-unsplash.jpg" alt="photo" />
-          <div class="product-text">
-            <h5>sale</h5>
-          </div>
-          <div class="heart-icon">
-            <i class="bx bx-heart"></i>
-          </div>
-          <div class="ratting">
-            <i class="bx bx-star"></i>
-            <i class="bx bx-star"></i>
-            <i class="bx bx-star"></i>
-            <i class="bx bx-star"></i>
-            <i class="bx bx-star-half"></i>
-          </div>
-          <div class="price">
-            <h4>sumsung note</h4>
-            <p>$4320</p>
+            <h4>Macbook Air</h4>
+            <p>$1320</p>
           </div>
         </div>
         <div class="row">
@@ -723,12 +763,12 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>wireless mouth</h4>
-            <p>$1320</p>
+            <h4>Wireless Mouse</h4>
+            <p>$150</p>
           </div>
         </div>
         <div class="row">
-          <img src="../images/v-a-tao-tjFeGpPRFig-unsplash.jpg" alt="photo" />
+          <img src="https://images.unsplash.com/photo-1596347909615-401e4242b3b2?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo" />
           <div class="product-text">
             <h5>sale</h5>
           </div>
@@ -743,12 +783,15 @@
             <i class="bx bx-star-half"></i>
           </div>
           <div class="price">
-            <h4>Apple</h4>
-            <p>$3599</p>
+            <h4>Dell Laptop</h4>
+            <p>$1700</p>
           </div>
         </div>
 
       </div>
+      <br>
+    <a href="" class="hero-button">Next</a>
     </section>
+    
   </body>
 </html>
