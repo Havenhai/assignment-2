@@ -96,7 +96,7 @@ nav {
   background: #f44336;
   transition: 1s;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .text-box h1 {
     font-size: 20px;
   }
@@ -116,7 +116,7 @@ nav {
 }
 
 .background {
-  background-color: #eee;
+  background-color: #f44336;
   display: grid;
   place-items: center;
   height: 92vh;
