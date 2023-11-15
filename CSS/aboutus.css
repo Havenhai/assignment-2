@@ -99,10 +99,10 @@ h1 {
 .about .row .content {
   flex: 1 1 40rem;
 }
-.aboutt .menu-icon{
+/* .aboutt .menu-icon{
   width: 25px;
   cursor: pointer;
-}
+} */
 .about .row .content h3 {
   font-size: 3rem;
   color: #333;
@@ -130,6 +130,9 @@ footer {
 .footer-section h3 {
   color: green;
 }
+.footer-section p{
+  line-height: 30px;
+}
 
 /* media queries*/
 @media (max-width: 991px) {
@@ -138,9 +141,6 @@ footer {
   }
 
   header {
-    padding: 2rem;
-  }
-  .aboutt{
     padding: 2rem;
   }
 
